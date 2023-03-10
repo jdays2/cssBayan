@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.hr {
+  color: blueviolet;
+  width: 100%;
+  margin: 1rem;
+}
+
+.main {
+  width: 40%;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  color: blue;
+}
+
+.main:hover {
+  color: black;
+}
+
+.main-title {
+  font-size: 3rem;
+  color: rgb(8, 0, 16);
+
+  margin: 1rem;
+}
+
+.main__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+}
+
+.main__item-tools {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main__item-tools-title {
+  font-size: 2.2rem;
+}
+.main__item-tools-title:hover {
+  color: green;
+}
+
+.main__item-tools-toggle {
+  font-size: 2.2rem;
+  transition: 0.5s;
+
+  display: none;
+}
+
+.main__item-tools-toggle:hover {
+  color: green;
+}
+
+.main:hover .main__item-tools-toggle {
+  display: block;
+  transition: 0.5s;
+}
+
+.main__item-img {
+  width: 12rem;
+  height: 12rem;
+  display: none;
+  transition: 1s;
+}
+
+.main__item:hover .main__item-img {
+  transition: 1s;
+  display: block;
+}
+
+.footer {
+  margin: 1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
