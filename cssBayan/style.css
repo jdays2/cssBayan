@@ -156,7 +156,7 @@ label:hover .main__item-tools-toggle {
   font-weight: 600;
 }
 
-@media (max-width: 1920px) {
+@media only screen and (max-width: 1920px) and (min-width: 821px) {
   .main__item:hover .img-wrapper img {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
       rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
