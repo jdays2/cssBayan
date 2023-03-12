@@ -82,14 +82,6 @@ body {
   transition: 0.5s;
 }
 
-.main__item:hover .img-wrapper img {
-  width: 100%;
-  height: 100%;
-  transition: 0.5s;
-  opacity: 1;
-  margin-bottom: 1.5rem;
-}
-
 .main__item-tools {
   width: 100%;
   display: flex;
@@ -161,6 +153,13 @@ label:hover .main__item-tools-toggle {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
       rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
       rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  .main__item:hover .img-wrapper img {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    opacity: 1;
+    margin-bottom: 1.5rem;
   }
 }
 
