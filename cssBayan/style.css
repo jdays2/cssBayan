@@ -39,14 +39,6 @@ body {
   color: rgb(255, 81, 0);
 }
 
-.main:hover {
-  color: black;
-}
-
-.main:hover .main__item-tools-toggle {
-  display: block;
-}
-
 .main-title {
   font-size: 3rem;
   font-family: "Josefin Sans", sans-serif;
@@ -100,20 +92,11 @@ body {
   width: 1rem;
   margin-left: 1.1rem;
 
-  display: none;
+  opacity: 0;
 }
 
 .main__item-tools-toggle img {
   width: 2.2rem;
-}
-
-.main__item:hover .main__item-tools .main__item-tools-toggle {
-  transform: rotate(45deg);
-}
-
-label:hover .main__item-tools-toggle {
-  display: block;
-  transition: 0.5s;
 }
 
 .main__item-img {
@@ -148,7 +131,7 @@ label:hover .main__item-tools-toggle {
   font-weight: 600;
 }
 
-@media only screen and (max-width: 1920px) and (min-width: 821px) {
+@media (max-width: 1920px) and (min-width: 821px) {
   .main__item:hover .img-wrapper img {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
       rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
@@ -160,6 +143,16 @@ label:hover .main__item-tools-toggle {
     transition: 0.5s;
     opacity: 1;
     margin-bottom: 1.5rem;
+  }
+  .main:hover {
+    color: black;
+  }
+  .main:hover .main__item-tools-toggle {
+    display: block;
+  }
+  .main__item:hover .main__item-tools .main__item-tools-toggle {
+    transform: rotate(45deg);
+    opacity: 1;
   }
 }
 
@@ -183,24 +176,17 @@ label:hover .main__item-tools-toggle {
     font-size: 1.5rem;
   }
   .main__item-tools-toggle {
-    display: block;
-  }
-  .main__item:hover .img-wrapper img {
-    width: 80%;
-    height: 80%;
     opacity: 1;
+    width: 0.8rem;
   }
   .img-wrapper {
     width: 100%;
   }
   .main__item-tools-toggle img {
-    width: 1.9rem;
+    width: 1.4rem;
   }
   .footer {
     font-size: 0.8rem;
-  }
-  .main__item:hover .img-wrapper img {
-    box-shadow: none;
   }
 }
 
@@ -219,14 +205,11 @@ label:hover .main__item-tools-toggle {
   .main__item-tools-title {
     font-size: 1.3rem;
   }
-  .main__item-tools-toggle {
-    width: 1.8rem;
+  .main__item-tools-toggle img {
+    width: 1rem;
   }
   .footer {
     font-size: 0.5rem;
-  }
-  .main__item:hover .img-wrapper img {
-    box-shadow: none;
   }
 }
 
