@@ -201,11 +201,18 @@ body {
     opacity: 1;
     margin-bottom: 1.5rem;
   }
+  .main__item:active {
+    font-weight: 600;
+    color: rgb(247, 66, 78);
+  }
+  .main:hover {
+    color: black;
+  }
   .main:hover {
     color: black;
   }
   .main:hover .main__item-tools-toggle {
-    display: block;
+    opacity: 1;
   }
   .main__item:hover .main__item-tools .main__item-tools-toggle {
     transform: rotate(45deg);
